@@ -1,0 +1,131 @@
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans:400,700";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #eee;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.featureSection {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.feature-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.card {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    background-color: #f2efe7 !important;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #48A6A7;
+    color: #ffffff;
+    text-align: center;
+}
+
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.trans {
+    background-color: #00000042;
+    object-fit: cover !important;
+}
+
+.cardbgc {
+    background-color: #48A6A7;
+}
+
+.cursos {
+    cursor: pointer;
+}
+
+.padd {
+    padding-top: 90px;
+    background-color: #fff;
+}
+
+.BTN {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.BTN a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2973b2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.BTN a:hover {
+    background-color: #2972B28E;
+}
+
+@media (max-width: 768px) {
+    .feature-col {
+        grid-template-columns: 1fr;
+    }
+
+    .featureSection {
+        height: auto;
+    }
+}
+
+.adddd {
+    background-color: #F2EFE7;
+    padding: 25px;
+    box-shadow: inset 0px -6px 10px 6px rgba(39, 39, 39, 0.15);
+}
+
+.titlec {
+    color: black;
+}

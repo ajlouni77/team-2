@@ -1,0 +1,489 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.task-input {
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-input input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.task-input button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.task-input button:hover {
+  background-color: #45a049;
+}
+
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 30px;
+
+}
+
+.quadrant {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quadrant h2 {
+  color: #333;
+}
+
+.quadrant ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quadrant ul li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.quadrant ul li:last-child {
+  border-bottom: none;
+
+
+
+
+}
+
+/* contact-form */
+.formcontainer {
+  display: flex;
+  justify-content: center;
+  /* Aligns the form to the right */
+  padding: 20px;
+}
+
+.contact-form {
+  background: #F2EFE7;
+  padding: 20px;
+  border-radius: 10px;
+  width: 700px;
+  /* Set a width for the form */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: to give a shadow to the form */
+
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contact-form div {
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+
+
+/**************************************************/
+.back-to-top {
+  position: fixed;
+  bottom: 140px;
+  right: 65px;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  color: white;
+
+  border-radius: 50%;
+  font-size: 50px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* لون خفيف عند التمرير */
+}
+
+/********************************************************/
+/* Quiz.css */
+.quiz-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.question-container {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.options-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.option-btn:hover {
+  background-color: #45a049;
+}
+
+.option-btn.selected {
+  background-color: #2196F3;
+}
+
+.submit-btn {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #007B9E;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result h2 {
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+
+
+.hrr {
+
+  width: 80%;
+
+  margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+.articles-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cardart {
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  background: white;
+  
+}
+
+.cardart:hover {
+  transform: scale(1.05);
+}
+
+.cardart img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+
+
+.kanban-container {
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.kanban-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.kanban-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-image {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.kanban-column {
+  background: #ecf0f1;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-card {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.kanban-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+.pomodoro-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff3e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pomodoro-title {
+  font-size: 2rem;
+  color: #d35400;
+  margin-bottom: 15px;
+}
+
+.pomodoro-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.pomodoro-description {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.pomodoro-steps-title {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #e74c3c;
+}
+
+.pomodoro-steps {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.pomodoro-steps li {
+  font-size: 1.1rem;
+  padding: 10px;
+  background: #ffe0b2;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.pomodoro-steps li:hover {
+  background: #ffcc80;
+}
+
+
+
+/* General styles */
+.productivity-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+.productivity-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Common styling for each technique */
+.technique {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.technique-title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.technique-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.technique-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.steps-title {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.steps-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+}
+
+.steps-list li {
+  margin-bottom: 8px;
+}
+
+/* Add hover effects on the technique cards */
+.technique:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Optional: Add some custom styles for images or text if needed */
+
+
+h2{
+
+color: black;
+
+}
